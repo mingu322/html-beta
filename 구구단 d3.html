@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    dan = 5;
+
+    for(let i = 1; i < 10; i++) {
+        // console.log(dan + '*' + i + '=' + (dan*i));
+    }
+
+    // for문을 사용해서 2단~9단 까지 출력
+    // dan = 2;
+    // for(let i = 1; i < 10; i++) {
+    //     console.log(dan*i); 
+    //     }dan = 3;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }dan = 4;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }dan = 5;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }dan = 6;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }dan = 7;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }dan = 8;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }dan = 9;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }
+    // for문을 사용해서 2단~9단 까지 출력(모범답안)
+        for(dan = 2; dan < 10; dan++) {
+            for(let i = 1; i < 10; i++) {
+                // console.log(dan + '*' + i + '=' + (dan*i));
+            }
+        }
+        // 모범답안 2
+        for(let i = 2; i < 10; i++) {
+            if(i == 4) {
+            continue;   
+        }
+            for(let j = 1; j < 10; j++) {
+                console.log(i + '*' + j + '=' + (i*j));
+            }
+            if (i == 8) {
+                break; 
+            }
+        }
+
+        // break; : 즉시종료 (명령어 앞 쪽 & 맨 뒤에 있어도 실행가능)
+        // continue; : 건너뛰기 (무조건 명령어 앞쪽에서만 실행가능)
+
+        
+
+
+            
+</script>
+
+</html>

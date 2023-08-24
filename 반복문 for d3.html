@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // 반복문 for : 초기 값이 조건문에서 참인 동안 실행문 반복
+    // for(초기문;조건문;증감문){실행문}
+    for( let i = 1; i <= 10; i++) {
+        // alert(i);
+    }
+
+    for(let i = 10; i >= 1; i--) {
+        // alert(i); 
+    }
+
+    // 비교연산자
+    // > : 크다, < : 작다, >= : 크거나 같다, <= : 작거나 같다
+    // == : 같다, != : 같지 않다
+    // True : 참, False : 거짓
+    a = 44;
+    b = 65;
+
+    // console.log(a>b)                //False 
+    // console.log(a<b)                //True
+    // console.log(a>=b)               //False
+    // console.log(a<=b)               //True
+    // console.log(a==b)               //False
+    // console.log(a!=b)               //True
+
+    // for문을 사용해서 100 이하의 짝수 출력
+    // for(let i = 2; i <= 100; i = i + 2) {
+    //     alert(i);
+    // }
+
+    // alert로 하면 알림이 뜨는 거고 console.log로 하면 크롬웹창에 f12누르면 뜬다.
+    for(let i = 1; i <= 100; i++) {
+        if(i % 2 == 1) {
+            // console.log(i);
+        }
+    }
+
+    // 100 이하의 수 중에서 7의 배수만 출력하기
+    for(let i = 7; i <= 100; i = i + 7) {
+        // console.log(i);
+    }
+
+    for(let i = 1; i <= 100; i++) {
+        if(i % 7 == 0) {
+            // console.log(i);
+        }
+    }
+
+    sum = 0;
+    for(let i = 1; i <= 10; i++) {
+        sum = sum + i;
+        // sum += i;
+        // console.log(sum);
+        // console.log(sum + '+' + i + '=' + (sum+i));
+    }
+    // console.log(sum);
+
+    // 100 이하의 수 중에서 홀수의 총합 구하기
+    sum = 0;
+    for(let i = 1; i <=100; i++) {
+        if(i % 2 == 1) {
+            sum = sum + i;  
+        }
+        console.log(sum);
+    }
+    console.log(sum);
+        
+    
+
+
+
+</script>
+
+</html>

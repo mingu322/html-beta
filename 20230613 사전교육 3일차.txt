@@ -1,0 +1,210 @@
+20230613 사전교육 3일차
+1.복습
+<!-- 
+    javascript : 웹사이트의 동작을 구현하는 언어
+    -- <script></script>
+
+    조건문 if
+    is(조건문){실행문} : 만약에~ 조건이 참일 때 실행
+    else if(조건문){실행문} : 아니면 만약에~ 앞에 조건이 참이 아니고 현재 조건이 참일때 실행
+    else{실행문} : 모든 조건이 참이 아닐 때 실행
+ -->
+
+2.반복문 for
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // 반복문 for : 초기 값이 조건문에서 참인 동안 실행문 반복
+    // for(초기문;조건문;증감문){실행문}
+    for( let i = 1; i <= 10; i++) {
+        // alert(i);
+    }
+
+    for(let i = 10; i >= 1; i--) {
+        // alert(i); 
+    }
+
+    // 비교연산자
+    // > : 크다, < : 작다, >= : 크거나 같다, <= : 작거나 같다
+    // == : 같다, != : 같지 않다
+    // True : 참, False : 거짓
+    a = 44;
+    b = 65;
+
+    // console.log(a>b)                //False 
+    // console.log(a<b)                //True
+    // console.log(a>=b)               //False
+    // console.log(a<=b)               //True
+    // console.log(a==b)               //False
+    // console.log(a!=b)               //True
+
+    // for문을 사용해서 100 이하의 짝수 출력
+    // for(let i = 2; i <= 100; i = i + 2) {
+    //     alert(i);
+    // }
+
+    // alert로 하면 알림이 뜨는 거고 console.log로 하면 크롬웹창에 f12누르면 뜬다.
+    for(let i = 1; i <= 100; i++) {
+        if(i % 2 == 1) {
+            // console.log(i);
+        }
+    }
+
+    // 100 이하의 수 중에서 7의 배수만 출력하기
+    for(let i = 7; i <= 100; i = i + 7) {
+        // console.log(i);
+    }
+
+    for(let i = 1; i <= 100; i++) {
+        if(i % 7 == 0) {
+            // console.log(i);
+        }
+    }
+
+    sum = 0;
+    for(let i = 1; i <= 10; i++) {
+        sum = sum + i;
+        // sum += i;
+        // console.log(sum);
+        // console.log(sum + '+' + i + '=' + (sum+i));
+    }
+    // console.log(sum);
+
+    // 100 이하의 수 중에서 홀수의 총합 구하기
+    sum = 0;
+    for(let i = 1; i <=100; i++) {
+        if(i % 2 == 1) {
+            sum = sum + i;  
+        }
+        console.log(sum);
+    }
+    console.log(sum);
+        
+</script>
+
+</html>
+
+3.구구단
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    dan = 5;
+
+    for(let i = 1; i < 10; i++) {
+        // console.log(dan + '*' + i + '=' + (dan*i));
+    }
+
+    // for문을 사용해서 2단~9단 까지 출력
+    // dan = 2;
+    // for(let i = 1; i < 10; i++) {
+    //     console.log(dan*i); 
+    //     }dan = 3;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }dan = 4;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }dan = 5;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }dan = 6;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }dan = 7;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }dan = 8;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }dan = 9;
+    //     for(let i = 1; i < 10; i++) {
+    //         console.log(dan*i);
+    //     }
+    // for문을 사용해서 2단~9단 까지 출력(모범답안)
+        for(dan = 2; dan < 10; dan++) {
+            for(let i = 1; i < 10; i++) {
+                // console.log(dan + '*' + i + '=' + (dan*i));
+            }
+        }
+        // 모범답안 2
+        for(let i = 2; i < 10; i++) {
+            if(i == 4) {
+            continue;   
+        }
+            for(let j = 1; j < 10; j++) {
+                console.log(i + '*' + j + '=' + (i*j));
+            }
+            if (i == 8) {
+                break; 
+            }
+        }
+
+        // break; : 즉시종료 (명령어 앞 쪽 & 맨 뒤에 있어도 실행가능)
+        // continue; : 건너뛰기 (무조건 명령어 앞쪽에서만 실행가능)
+</script>
+
+</html>
+
+4.반복문 while
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // 반복문 while : 조건이 참인 동안 반복
+    // while(조건문){실행문}
+    // 증감문은 웬만하면 맨 아래에 쓴다
+    // let i = 1;
+    // while(i <= 10) {
+    //     alert(i);
+    //     i++;
+    // }
+
+    // while문을 사용해서 10이하의 수 중에서 5배 배수는 건너뛰고 출력
+    // let i = 1;
+    // while(i <= 10) {
+    //     if(i % 5 == 0) {
+    //         i++;
+    //         continue;
+    //     } alert(i);
+    //     i++; 
+    // }
+
+    // 모범답안
+    let i = 0;
+    while(i < 10) {
+        i++;
+        if(i % 5 == 0) {
+            continue;
+        }
+        alert(i);
+        
+    }
+</script>
+
+</html>

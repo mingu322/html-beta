@@ -1,0 +1,161 @@
+프론트엔드 (사전교육 동안 배울 것)
+웹사이트 화면에 보이는 거
+html(비스코의 바디부분), css(비스코의 스타일 부분), javascript
+
+백엔드
+웹사이트 화면에 보이지 않는 거
+java, python
+
+비주얼 스튜디오 코드 앱 다운
+1.맨 처음에 !치고 바로 엔터치면 기본 틀 실행 (추가로 ctrl + / 치는 방법이 있음)
+2.DOCTYPE html > 이 프로그램이 html 프로그램이다라는 것에 대한 설명
+3.head는 주요 머리
+4.body는 이제 내가 앞으로 명령어를 적고 만들어야할 몸체
+5.주석 = 프로그램 실행시 실행되지 않는 부분
+6.태그 = <>가 태그임.
+7.보통 태그 진행이 <여는태그>내용</닫는태그>로 진행
+8.h1~6 (태그 명령어)
+div : 영역 나누기(태그 명령어)
+9.알트 + 시프트 누른채로 아래방향키 누르면 복사가능
+10.head title 아래다가 style 치고 div {background-color} 하면 바디에 대한 배경색 결정됌
+11.바디에 쓴 명령어를 더이상 보이고 싶지 않으면 전체 드래그 후 ctrl + / 치면 됌
+12.글씨 크기 (ctrl + (크게), - (작게)
+13.줄 마다 스타일 따로 하고 싶으면 div 여는태그에 id 친 후 큰 따음표 사이에 div1 적용
+14.그 후 10번에 있는 div 앞에 #붙이면서 #div1~3 그리고 각자 색 적용
+15.헤드에 타이틀 부분의 이름을 바꾸면 앱의 맨 위 창 이름이 바뀐다
+16.div 명령어의 전체를 id="box"로 표시
+17.width(넓이), height, padding으로 설정가능
+18.박스 전체 말고 박스 안에있는 div 각각 설정도 가능(float 치고 오른쪽 또는 왼쪽)
+19.글씨 색만 바꾸고 싶으면 그냥 box div 안에 color 입력 
+20.margin-오른쪽 or 왼쪽 하면 div마다 간격 조정가능
+21.width(넓이), padding(폭), 
+
+자기소개 카드 만들기
+1.바디안에 div id=title 자기소개 카드
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #card{background-color: aliceblue;
+        width: 350px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px black;
+    }
+    #title{
+        font-size: 50px;
+    }
+    img{
+        width: 100%;
+        height: 300px;
+        opacity: 0.5;
+    }
+        img:hover{
+            opacity: 1;
+        }
+        p{
+            background-color: gray;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+        <div id="title">자기소개 카드</div>
+        <img src="./다운로드.jpg">
+        <div id="content">
+            <h4>이름: </h4>
+            <h4>나이: </h4>
+            <h4>성별: </h4>
+            <h4>자기소개 및 하고싶은 말 : </h4>
+            <p>
+                저는 음악을 좋아합니다.
+                비전공자 입니다. 
+                수업이 어렵지만 열심히 따라가겠습니다. 
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+*p(내용)에다가 띄어쓰기 하고 싶으면 <br>
+
+처음 배운 것
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {background-color: chocolate;}
+        #div2 {background-color: aqua;}
+        #div3 {background-color: brown;}
+</style>
+</head>
+<body>
+    <!-- 주석 : 프로그램 실행시 실행되지 않는 부분 -->
+    <!-- 태그 : <> -->
+    <!-- 여는태그>내용</닫는태그? -->
+    <!-- <h1>제목1</h1>
+    <h2>제목2</h2>
+    <h3>제목3</h3>
+    <h4>제목4</h4>
+    <h5>제목5</h5>
+    <h6>제목6</h6>
+    <h7>제목7</h7>
+    <h8>제목8</h8> -->
+
+    <!-- div : 영역 나누기 -->
+    <div id="div1">첫번쨰</div>
+    <div id="div2">두번째</div>
+    <div id="div3">세번째</div>
+    첫번쨰
+    두번째
+    세번째
+</body>
+</html>
+
+rainbow 색 각각 넣어본 프로그램
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rainbow</title>
+    <style>
+        #div1 {background-color: red;}
+        #div2 {background-color: orange;}
+        #div3 {background-color: yellow;}
+        #div4 {background-color: green;}
+        #div5 {background-color: blue;}
+        #div6 {background-color: navy;}
+        #div7 {background-color: purple;}
+        #box{
+            background-color: black;
+            width: 770px;
+            height: 100px;
+            padding: 10px;
+        }
+        #box div{
+            width: 100px;
+            height: 100px;
+            float: left;
+            color: white;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="div1">red</div>
+        <div id="div2">orange</div>
+        <div id="div3">yellow</div>
+        <div id="div4">green</div>
+        <div id="div5">blue</div>
+        <div id="div6">navy</div>
+        <div id="div7">purple</div>
+    </div>
+</body>
+</html>
